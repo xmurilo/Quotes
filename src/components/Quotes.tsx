@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 const Quotes = ({ text, author }: { text: string; author: string }) => {
   const [translator, setTranslator] = useState("");
 
+  // * Unfortunately the API is no longer working so I will leave the code here for future reference, to use the API you have to pay now
   async function translateQuote(language: string) {
     try {
       const response = await fetch("https://libretranslate.de/translate", {
